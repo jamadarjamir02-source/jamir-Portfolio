@@ -8,7 +8,7 @@ A personal portfolio website showcasing my academic achievements, projects, cert
 ## 📸 Preview
 
 > _Add a screenshot of your portfolio here after hosting it._
-> `![Portfolio Preview](screenshot.png)`
+> ![Portfolio Preview](profile.jpg)
 
 ---
 
