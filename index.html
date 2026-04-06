@@ -23,12 +23,15 @@
     html { scroll-behavior: smooth; }
 
     body {
+      
       background: var(--bg);
       color: var(--text);
       font-family: 'DM Sans', sans-serif;
       font-weight: 300;
       line-height: 1.7;
       overflow-x: hidden;
+      display: block;
+      width: 100%;
     }
 
     /* ── NOISE TEXTURE OVERLAY ── */
@@ -81,13 +84,14 @@ __
 
     /* ── HERO ── */
     #home {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 6rem 3rem 4rem;
-      position: relative;
-      overflow: hidden;
-    }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 3rem 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
 
     .hero-grid {
       display: grid;
@@ -243,10 +247,13 @@ __
 
     /* ── SECTION WRAPPER ── */
     section {
-      padding: 6rem 3rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+  padding: 6rem 3rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+    
 
     .section-label {
       font-family: 'DM Mono', monospace;
@@ -404,7 +411,7 @@ __
     }
 
     .project-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; gap: 0.7rem; }
-
+  
     .project-title {
       font-family: 'Playfair Display', serif;
       font-size: 1.2rem;
@@ -655,7 +662,7 @@ __
       #home, section { padding: 5rem 1.5rem 3rem; }
       .skills-full { padding: 5rem 1.5rem 3rem; }
 
-      .hero-grid { grid-template-columns: 1fr; }
+      .hero-grid {   display: grid;   grid-template-columns: 1fr 380px;   gap: 4rem;   max-width: 1200px;   margin: 0 auto;   width: 100%; } { grid-template-columns: 1fr; }
       .hero-photo-wrap { order: -1; }
       .hero-photo { aspect-ratio: 1/1; max-width: 280px; margin: 0 auto; }
 
